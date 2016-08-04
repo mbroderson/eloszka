@@ -11,7 +11,7 @@ defmodule Eloszka.User do
   def changeset(model, params \\ :empty) do
     model
     |> cast(params, ~w(name email), [])
-    # |> unique_constraint(:email)
-    # |> validate_format(:email, ~r/@binarapps.com/)
+    |> unique_constraint(:email)
+    |> validate_format(:email, ~r/@binarapps.com/)
   end
 end
