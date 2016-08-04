@@ -23,6 +23,9 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
+Notes for dev
+To require authenication just add: `plug :authenticate when action in [:action_name_1, :action_name_2]`
+
 ## Learn more
 
   * Official website: http://www.phoenixframework.org/
